@@ -1,9 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-  </body>
-<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="inner-header-item">
+    <a href="index.html"><img class="header-logo" src="" alt="Логотип Sedona"></a>
+    <nav class="navigation-menu">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list user-item">
+        <li class="navigation-user">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="icon-heart">
+          <img src="" alt="Иконка в виде сердца">
+        </li>
+        <li class="navigation-user">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="navigation-user">
+          <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hotels_sedona">
+    <h1>Гостиницы Седоны</h1>
+    <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <img class="logo-inner-home" src="" alt="микро домик">
+      <img class="logo-more" src="" alt="значок больше">
+      <span class="hotels">Гостиницы</span>
+      <fieldset>
+        <legend class="infrastructure">Инфраструктура:</legend>
+        <ul class="infrastructure-list">
+          <li class="infrastructure-item">
+            <label for="swimming-pool">Бассейн</label>
+            <input type="checkbox" checked name="swimming-pool" id="swimming-pool">
+          </li>
+          <li class="infarastructure-item">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" checked name="parking" id="parking">
+          </li>
+          <li class="infastructure-item">
+            <label for="Wi-Fi">Wi-Fi</label>
+            <input type="checkbox" name="wi-fi" id="Wi-Fi">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="type-house-sedona">
+        <legend class="type-house">Тип жилья:</legend>
+        <ul class="type-house-list">
+          <li class="type-house-item">
+            <label>Гостиница
+              <input type="radio" checked name="choice" id="hotel-sedona">
+            </label>
+          </li>
+          <li class="type-house-item">
+            <label>Мотель
+              <input type="radio" name="choice" id="hotel-sedona">
+            </Label>
+          </li>
+          <li class="type-house-item">
+            <label>Апартаменты
+              <input type="radio" name="choice" id="hotel-sedona">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </section>
+</body>
+
+</html>
