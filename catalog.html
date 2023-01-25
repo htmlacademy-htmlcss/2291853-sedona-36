@@ -42,7 +42,7 @@
     </nav>
   </header>
 
-  <section class="hotels_sedona">
+  <section class="type-hotels_sedona">
     <h1>Гостиницы Седоны</h1>
     <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get">
       <img class="logo-inner-home" src="" alt="микро домик">
@@ -86,8 +86,150 @@
           </li>
         </ul>
       </fieldset>
+
+
+      <fieldset class="field-cost">
+        <legend class="cost">Стоимость, ₽:</legend>
+        <ul class="cost-list">
+          <li class="cost-item">
+            <label class="cost-min">от
+              <input type="number" name="num-min" min="0" max="9000" value="0">
+            </label>
+          </li>
+          <li class="cost-item">
+            <label class="cost-max">до
+              <input type="number" name="num-max" min="0" max="9000" value="9000">
+            </label>
+          </li>
+        </ul>
+        <input class="cost-range" type="range" name="range-cost" min="0" max="9000">
+      </fieldset>
+
+        <ul class="button-list">
+          <li class="button-item-apply">
+            <button class="apply-button">ПРИМЕНИТЬ</button>
+          </li>
+          <li class="button-item-clear">
+            <a class="clear" href="#">СБРОСИТЬ</a>
+          </li>
+        </ul>
     </form>
   </section>
+   <form action="https://echo.htmlacademy.ru/" method="get">
+    <section class="hotels-sedona">
+      <section class="select-control-hotel">
+        <h2 class="find-hotel">Найдено гостиниц: 38</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <a class="button-button-dark" href="#">
+          <span class="visually-hidden">Показать плитку карточек</span>
+        </a>
+        <div class="button-button-component-properties"><a href="#">
+          <span class="visually-hidden">Компонентные свойства</span>
+          </a>
+        </div>
+        <a class="button-button-list" href="#">
+          <span class="visually-hidden">Показать список карточек</span>
+        </a>
+      </section>
+      <section class="all-hotel">
+        <article class="hotel-1">
+          <img src="" alt="Гостиница Amara Resort & Spa">
+          <h3 class="name-hotel-1">Amara Resort & Spa</h3>
+          <p class="amara">Гостиница</p>
+          <p class="price-1">От 4000 ₽</p>
+          <a class="button-more-detailed" href="#">ПОДРОБНЕЕ</a>
+          <button class="to-favorites">В ИЗБРАННОЕ</button>
+          <span class="stars">Четыре звезды</span>
+          <span class="rating">Рейтинг: 8,5</span>
+
+        </article>
+        <article class="hotel-2">
+          <img src="" alt="Гостиница Villas at Poco Diablo">
+          <h3 class="name-gotel-2">Villas at Poco Diablo</h3>
+          <p class="villas">Гостиница</p>
+          <p class="price-2">От 5000 ₽</p>
+          <a class="button-more-detailed" href="#">ПОДРОБНЕЕ</a>
+          <button class="in-favorites">В ИЗБРАННОМ</button>
+          <span class="stars">Четыре звезды</span>
+          <span class="rating">Рейтинг: 9,2</span>
+        </article>
+        <article class="hotel-3">
+          <img src="" alt="Гостиница Desert Quail Inn">
+          <h3 class="name-hotel-3">Desert Quail Inn</h3>
+          <p class="desert">Гостиница</p>
+          <p class="price-3">От 2500 ₽</p>
+          <a class="button-more-detailed" href="#">ПОДРОБНЕЕ</a>
+          <button class="to-favorites">В ИЗБРАННОЕ</button>
+          <span class="stars">Три звезды</span>
+          <span class="rating">Рейтинг: 6,9</span>
+        </article>
+        <article class="hotel-4">
+          <img src="" alt="Гостиница GreenTree Inn">
+          <h3 class="name-hotel-4">GreenTree Inn</h3>
+          <p class="greenTree">Гостиница</p>
+          <p class="price-4">От 1500 ₽</p>
+          <a class="button-more-detailed" href="#">ПОДРОБНЕЕ</a>
+          <button class="to-favorites">В ИЗБРАННОЕ</button>
+          <span class="stars">Две звезды</span>
+          <span class="rating">Рейтинг: 5,0</span>
+        </article>
+      </section>
+
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">...</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+    </section>
+  </form>
+  <section class="subscribe-list">
+    <h3>Подпишитесь на рассылку</h3>
+    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <article class="input-subscribe">
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label for="email">
+          <input type="email" id="email" value="Ваш e-mail">
+        </label>
+      </form>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <button class="button" type="button">Подписаться</button>
+      </form>
+    </article>
+  </section>
+  <footer class="footer-main">
+    <section class="messenger">
+      <a href="https://vk.com/htmlacademy" target="blank"><img class="logo-vk" src="" alt="логотип вконтакте"></a>
+      <a href="https://t.me/htmlacademy" target="blank"><img class="logo-telegram" src="" alt="логотип телеграм"></a>
+      <a href="https://youtube.com/user/htmlacademyru" target="blank"><img class="logo-youtube" src=""
+          alt="логотип youtube"></a>
+    </section>
+    <div class="tel">
+      <a href="tel:+78128121212">+7(812)812-12-12</a>
+    </div>
+    <div class="logo-htmlacademy">
+      <a href="https://htmlacademy.ru" target="blank"><img src="" alt="логотип htmlacademy"></a>
+    </div>
+  </footer>
 </body>
+
 
 </html>
