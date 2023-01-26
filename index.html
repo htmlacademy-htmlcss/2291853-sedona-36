@@ -8,11 +8,13 @@
 
 <body>
   <header class="main-header-item">
-    <a href="index.html"><img class="header-logo" src="" alt="Логотип Sedona"></a>
+    <a class="current-page">
+      <img class="header-logo" src="" alt="Логотип Sedona">
+    </a>
     <nav class="navigation-menu">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Главная</a>
+          <a class="navigation-link current-page">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -41,14 +43,14 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-intro">
     <article class="main-logo-page">
       <img class="logo-welcome" src="" alt="Добро-пожаловать">
       <img class="logo-gorgeous" src="" alt="Великолепный">
       <h1 class="visually-hidden">Седона, потому что большой каньон - отстой</h1>
       <img class="logo-sedona" src="" alt="Седона лучше Гранд-Каньона">
     </article>
-    <section class="slogan-first">
+    <section class="slogan">
       <h2 class="slogan-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="reason">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
@@ -100,32 +102,29 @@
         <li class="advantages-item-continue">
           <img class="logo-gifts" src="" alt="Логотип сувениры">
           <h3>СУВЕНИРЫ</h3>
-          <p>Не только китайского,
-            но и настоящего местного производства!
+          <p>
+            Не только китайского, но и настоящего местного производства!
           </p>
         </li>
       </ul>
     </section>
-    <section class="interesting">
-      <h3>Заинтересовались?</h3>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a href="catalog.html" target="blank">ПОИСК ГОСТИНИЦЫ В седоне</a>
+    <section class="slogan-interesing">
+      <h3 class="subscribe-to-the-newsletter">Заинтересовались?</h3>
+      <p class="interest-in-dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <a class="search-for-your-рotel" href="catalog.html" target="blank">Поиск гостиницы в седоне</a>
     </section>
     <section class="subscribe-list">
-      <h3>Подпишитесь на рассылку</h3>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <article class="input-subscribe">
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <label for="email">
-            <input type="email" id="email" value="Ваш e-mail">
-          </label>
-        </form>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <button class="button" >Подписаться</button>
-        </form>
-      </article>
+      <h3 class="subscribe-to-the-newsletter">Подпишитесь на рассылку</h3>
+      <p class="useful information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe-information" action="https://echo.htmlacademy.ru/" method="get">
+        <label for="email">
+          <input type="email" id="email" placeholder="Ваш e-mail">
+        </label>
+        <button class="button" type="button">Подписаться</button>
+      </form>
     </section>
-    <footer class="footer-main">
+    <footer class="footer">
       <section class="messenger">
         <a href="https://vk.com/htmlacademy" target="blank"><img class="logo-vk" src="" alt="логотип вконтакте"></a>
         <a href="https://t.me/htmlacademy" target="blank"><img class="logo-telegram" src="" alt="логотип телеграм"></a>
@@ -141,5 +140,4 @@
     </footer>
   </main>
 </body>
-
 </html>
