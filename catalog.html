@@ -25,12 +25,9 @@
       </ul>
       <ul class="navigation-list-user">
         <li class="navigation-item-user">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link-user" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
-        </li>
-        <li class="icon-heart">
-          <img src="" alt="Иконка в виде сердца">
         </li>
         <li class="navigation-item-user">
           <a class="navigation-link" href="#">
@@ -58,46 +55,46 @@
         </li>
       </ol>
 
-      <fieldset calss="fielters-fieldset">
-        <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+      <fieldset class="fielters-fieldset">
         <legend class="filters-legend">Инфраструктура:</legend>
-        <ul class="filters-control">
-          <li class="filters-control-item">
-            <label class="filters-label">Бассейн
-              <input type="checkbox" checked name="swimming-pool">
-            </label>
-          </li>
-          <li class="filters-control-item">
-            <label class="filters-label">Парковка
-              <input type="checkbox" checked name="parking">
-            </label>
-          </li>
-          <li class="filters-control-item">
-            <label class="filters-label">Wi-Fi
-              <input type="checkbox" name="wi-fi">
-            </label>
-          </li>
-        </ul>
-        </form>
+          <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <ul class="filters-control">
+              <li class="filters-control-item">
+                <label class="filters-label">Бассейн
+                  <input class="filter-checkbox" type="checkbox" checked name="swimming-pool">
+                </label>
+              </li>
+              <li class="filters-control-item">
+                <label class="filters-label">Парковка
+                  <input class="filter-checkbox" type="checkbox" checked name="parking">
+                </label>
+              </li>
+              <li class="filters-control-item">
+                <label class="filters-label">Wi-Fi
+                  <input class="filter-checkbox" type="checkbox" name="wi-fi">
+                </label>
+              </li>
+            </ul>
+          </form>
       </fieldset>
 
       <fieldset class="filters-fieldset">
+        <legend class="filters-legend">Тип жилья:</legend>
         <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <legend class="filters-legend">Тип жилья:</legend>
           <ul class="filters-control">
             <li class="filters-control-item">
               <label class="fiters-label">Гостиница
-                <input type="radio" checked name="choice">
+                <input class="filter-radio" type="radio" checked name="choice">
               </label>
             </li>
             <li class="filters-control-item">
               <label class="filters-label">Мотель
-                <input type="radio" name="choice">
+                <input class="filter-radio" type="radio" name="choice">
               </Label>
             </li>
             <li class="filters-control-item">
               <label class="filters-label">Апартаменты
-                <input type="radio" name="choice">
+                <input Class="filter-radio" type="radio" name="choice">
               </label>
             </li>
           </ul>
@@ -105,38 +102,39 @@
       </fieldset>
 
       <fieldset class="field-cost">
+        <legend class="cost">Стоимость, ₽:</legend>
         <form class="service-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <legend class="cost">Стоимость, ₽:</legend>
           <ul class="cost-list">
             <li class="cost-item">
               <label class="cost-min">от
-                <input type="number" name="num-min" min="0" max="9000" value="0">
+                <input class="filter-cost" type="number" name="num-min" min="0" max="9000" value="0">
               </label>
             </li>
             <li class="cost-item">
               <label class="cost-max">до
-                <input type="number" name="num-max" min="0" max="9000" value="9000">
+                <input class="filter-cost" type="number" name="num-max" min="0" max="9000" value="9000">
               </label>
             </li>
           </ul>
           <input class="cost-range" type="range" name="range-cost" min="0" max="9000">
+        </form>
       </fieldset>
-
-      <ul class="filter-buttom-control">
-        <li class="button-control-item">
-          <button class="button-item" type="submit">ПРИМЕНИТЬ</button>
-        </li>
-        <li class="button-control-item">
-          <button class="button-item" type="reset">СБРОСИТЬ</button>
-        </li>
-      </ul>
+      <form class="action-button" action="https://echo.htmlacademy.ru/" method="get">
+        <ul class="filter-buttom-control">
+          <li class="button-control-item">
+            <button class="button-item" type="submit">ПРИМЕНИТЬ</button>
+          </li>
+          <li class="button-control-item">
+            <button class="button-item" type="reset">СБРОСИТЬ</button>
+          </li>
+        </ul>
       </form>
     </section>
 
     <section class="hotels-sedona">
       <section class="select-control-hotel">
         <div class="catalog-header">
-          <h2>Найдено гостиниц: 38</h2>
+          <h2 class="find-hotel">Найдено гостиниц: 38</h2>
         </div>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
@@ -150,13 +148,11 @@
             </a>
           </li>
           <li class="catalog-view-controls-item">
-            <div class="button-button-component-properties">
-              <a class="catalog-view-control" href="#">
-                <span class="visually-hidden">Компонентные свойства</span>
-              </a>
-            </div>
+            <a class="catalog-view-control" href="#">
+              <span class="visually-hidden">Компонентные свойства</span>
+            </a>
           </li>
-          <li class="catalog-controls-item">
+          <li class="catalog-view-controls-item">
             <a class="catalog-control-item" href="#">
               <span class="visually-hidden">Показать список карточек</span>
             </a>
@@ -247,7 +243,7 @@
     </section>
 
     <section class="subscribe-list">
-      <h2 class="subscribe-to-the-newsletter">Подпишитесь на рассылку</h2>
+      <h3 class="subscribe-to-the-newsletter">Подпишитесь на рассылку</h3>
       <p class="useful information">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-information" action="https://echo.htmlacademy.ru/" method="get">
         <label for="email">
