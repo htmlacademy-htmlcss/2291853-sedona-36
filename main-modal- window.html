@@ -9,20 +9,20 @@
 <body>
   <main>
     <section class="modal-page">
-      <h1 search-hotel>Поиск гостиницы в Седоне</h1>
+      <h1 class="search-hotel">Поиск гостиницы в Седоне</h1>
       <img class="close-page" src="" alt="закрыть окно с бронированем гостницы">
       <ul class="date-check-list">
         <li class="date-check-item">
           <label class="date-check">Дата заезда:
             <input class="date" type="text" name="calendar" value="27 апреля 2020">
-            <p class="">Мы не можем отправить вас в прошлое.</p>
           </label>
+          <p class="date-non">Мы не можем отправить вас в прошлое.</p>
         </li>
         <li class="date-check-item">
           <label class="date-check">Дата выезда:
             <input class="date" type="text" name="calendar" value="1 сентября 2023">
-            <p class="">На эти даты есть свободные номера. Пока есть.</p>
           </label>
+          <p class="date-yes">На эти даты есть свободные номера. Пока есть.</p>
         </li>
       </ul>
       <ul class="age-list">
@@ -34,12 +34,15 @@
         <li class="age-item">
           <label class="age-choise">Дети:
             <img class="number-of-children" src="" alt="информация по детям">
-              <article class="info-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</article>
-              <input class="age" type="text" name="child" value="2">
+            <input class="age" type="text" name="child" value="2">
           </label>
         </li>
       </ul>
-      <button class="search" type="submit">Найти</button>
+      <article class="info-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
+        до 6 лет размещаются бесплатно.</article>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <button class="search" type="submit">Найти</button>
+      </form>
     </section>
   </main>
 </body>
