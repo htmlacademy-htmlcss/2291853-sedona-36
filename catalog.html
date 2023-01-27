@@ -8,7 +8,7 @@
 
 <body>
   <header class="inner-header-catalog">
-    <a href="index.html">
+    <a class="main-link" href="index.html">
       <img class="header-logo" src="" alt="Логотип Sedona">
     </a>
     <nav class="navigation-menu">
@@ -124,10 +124,10 @@
 
       <ul class="filter-buttom-control">
         <li class="button-control-item">
-          <button class="button-item" type="button">ПРИМЕНИТЬ</button>
+          <button class="button-item" type="submit">ПРИМЕНИТЬ</button>
         </li>
         <li class="button-control-item">
-          <button class="button-item" type="button">СБРОСИТЬ</button>
+          <button class="button-item" type="reset">СБРОСИТЬ</button>
         </li>
       </ul>
       </form>
@@ -170,12 +170,12 @@
               <img src="" alt="Гостиница Amara Resort & Spa">
             </a>
             <a class="card-title-link" href="#">
-              <h3 class="card-name" ">Amara Resort & Spa</h3>
+              <h3 class="card-name">Amara Resort & Spa</h3>
             </a>
             <p class=" amara">Гостиница</p>
                 <p class="card-price">От 4000 ₽</p>
                 <a class="card-detailed" href="#">ПОДРОБНЕЕ</a>
-                <button class="card-button">В ИЗБРАННОЕ</button>
+                <button class="card-button" type="button">В ИЗБРАННОЕ</button>
                 <span class="card-stars">Четыре звезды</span>
                 <span class="card-rating">Рейтинг: 8,5</span>
           </li>
@@ -189,7 +189,7 @@
             <p class="villas">Гостиница</p>
             <p class="card-price">От 5000 ₽</p>
             <a class="card-detailed" href="#">ПОДРОБНЕЕ</a>
-            <button class="card-button">В ИЗБРАННОМ</button>
+            <button class="card-button" type="button">В ИЗБРАННОМ</button>
             <span class="card-stars">Четыре звезды</span>
             <span class="card-rating">Рейтинг: 9,2</span>
           </li>
@@ -203,7 +203,7 @@
             <p class="desert">Гостиница</p>
             <p class="card-price">От 2500 ₽</p>
             <a class="card-detailed" href="#">ПОДРОБНЕЕ</a>
-            <button class="card-button">В ИЗБРАННОЕ</button>
+            <button class="card-button" type="button">В ИЗБРАННОЕ</button>
             <span class="card-stars">Три звезды</span>
             <span class="card-rating">Рейтинг: 6,9</span>
           </li>
@@ -217,14 +217,14 @@
             <p class="greenTree">Гостиница</p>
             <p class="card-price">От 1500 ₽</p>
             <a class="card-detailed" href="#">ПОДРОБНЕЕ</a>
-            <button class="card-button">В ИЗБРАННОЕ</button>
+            <button class="card-button" type="button">В ИЗБРАННОЕ</button>
             <span class="card-stars">Две звезды</span>
             <span class="card-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
       </section>
 
-      <ul class="pagination-list">
+      <ol class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -243,7 +243,7 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-      </ul>
+      </ol>
     </section>
 
     <section class="subscribe-list">
@@ -258,12 +258,23 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="messenger">
-      <a href="https://vk.com/htmlacademy" target="blank"><img class="logo-vk" src="" alt="логотип вконтакте"></a>
-      <a href="https://t.me/htmlacademy" target="blank"><img class="logo-telegram" src="" alt="логотип телеграм"></a>
-      <a href="https://youtube.com/user/htmlacademyru" target="blank"><img class="logo-youtube" src=""
-          alt="логотип youtube"></a>
-    </section>
+    <ul class="messenger-list">
+      <li class="messenger-item">
+        <a class="messenger-logo" href="https://vk.com/htmlacademy" target="blank">
+          <img class="logo-vk" src="" alt="логотип вконтакте">
+        </a>
+      </li>
+      <li class="messenger-list">
+        <a class="mesenger-logo" href="https://t.me/htmlacademy" target="blank">
+          <img class="logo-telegram" src="" alt="логотип телеграм">
+        </a>
+      </li>
+      <li class="messenger-item">
+        <a class="mesenger-logo" href="https://youtube.com/user/htmlacademyru" target="blank">
+          <img class="logo-youtube" src="" alt="логотип youtube">
+        </a>
+      </li>
+    </ul>
         <a class="phone-number-link" href="tel:+78128121212">+7(812)812-12-12</a>
       <a class="logo-htmlacademy" href="https://htmlacademy.ru" target="blank"><img src="" alt="логотип htmlacademy"></a>
   </footer>
