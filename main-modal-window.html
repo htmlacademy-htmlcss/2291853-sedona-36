@@ -8,40 +8,38 @@
 
 <body>
   <main>
-    <section class="choise">
-      <h1 class="header-choise">Поиск гостиницы в Седоне</h1>
-        <button class="visually-hidden" type="button">Закрыть окно</button>
-      <ul class="choise-list">
-        <li class="choise-item">
-          <label class="choise-layout" >Дата заезда:
-            <input class="choise-layout-field" type="text" name="calendar" value="27 апреля 2020">
-          </label>
-          <p class="choise-title">Мы не можем отправить вас в прошлое.</p>
-        </li>
-        <li class="choise-item">
-          <label class="">Дата выезда:
-            <input class="choise-layout-field" type="text" name="calendar" value="1 сентября 2023">
-          </label>
-          <p class="choise-title-extra">На эти даты есть свободные номера. Пока есть.</p>
-        </li>
-      </ul>
-      <ul class="choise-list-extra">
-        <li class="choise-item-extra">
-          <label class="choise-layout-extra">Взрослые:
-            <input class="choise-layout-field-extra" type="text" name="adult" value="2">
-          </label>
-        </li>
-        <li class="choise-item-extra">
-          <label class="choise-layout-extra">Дети:
-            <img class="choise-text" src="" alt="информация по детям">
-            <input class="choise-layout-field-extra" type="text" name="child" value="2">
-          </label>
-        </li>
-      </ul>
-      <article class="">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
-        до 6 лет размещаются бесплатно.</article>
+    <section class="offer-search-modal">
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <button class="search" type="submit">Найти</button>
+        <h1 class="header-search">Поиск гостиницы в Седоне</h1>
+        <button class="offer-search-button" type="button">Закрыть окно</button>
+        <ul class="offer-search-list">
+          <li class="offer-search-item">
+            <label class="offer-search-control" >Дата заезда:
+              <input class="search-control-input" type="text" name="calendar" placeholder="27 апреля 2020">
+            </label>
+            <p class="offer-search-description">Мы не можем отправить вас в прошлое.</p>
+          </li>
+          <li class="offer-search-item">
+            <label class="offer-search-control">Дата выезда:
+              <input class="search-control-input" type="text" name="calendar" value="1 сентября 2023">
+            </label>
+            <p class="offer-search-text">На эти даты есть свободные номера. Пока есть.</p>
+          </li>
+        </ul>
+        <ul class="search-guests-list">
+          <li class="search-guest-item">
+            <label class="search-guest-control">Взрослые:
+              <input class="guest-control-input" type="text" name="adult" value="2">
+            </label>
+          </li>
+          <li class="search-guest-item">
+            <label class="search-guest-control">Дети:
+              <input class="guest-control-input" type="text" name="child" value="2">
+            </label>
+          </li>
+        </ul>
+          <div class="">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+          <button class="search" type="submit">Найти</button>
       </form>
     </section>
   </main>
