@@ -8,7 +8,7 @@
 
 <body>
   <header class="main-header">
-    <a class="header-logo">
+    <a class="header-logo-link">
       <img class="header-logo" src="" alt="Логотип Sedona">
     </a>
     <nav class="navigation">
@@ -54,28 +54,30 @@
           <img class="advantages-photo" src="" alt="домики в седоне">
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <ul class="extra-advantages">
+            <li class="extra-advantages-item">
+              <h3 class="extra-advantages-title">Небольшая площадь</h3>
+              <p class="extra-advantages-text">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="extra-advantages-item">
+              <h3 class="extra-advantages-title">Красивая дорога</h3>
+              <p class="extra-advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="extra-advantages-item">
+              <h3 class="extra-advantages-title">Мало туристов</h3>
+              <p class="extra-advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
         </li>
-      </ul>
-      <ul class="extra-advantages">
-        <li class="extra-advantages-item">
-          <h3 class="extra-advantages-title">Небольшая площадь</h3>
-          <p class="extra-advantages-text">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="extra-advantages-item">
-          <h3 class="extra-advantages-title">Красивая дорога</h3>
-          <p class="extra-advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="extra-advantages-item">
-          <h3 class="extra-advantages-title">Мало туристов</h3>
-          <p class="extra-advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
-      <ul class="advantages-list">
         <li class="advantages-item">
           <img class="advantages-photo" src="" alt="вид на каньон">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
+      </ul>
+
+      <ul class="advantages-list">
+
       </ul>
     </section>
     <section class="benefits">
@@ -88,7 +90,7 @@
         </li>
         <li class="benefits-item">
           <h3 class="benefist-title">ЕДА</h3>
-          <p class="benefist-extra">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="benefist-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="benefits-item">
           <h3 class="benefist-title">СУВЕНИРЫ</h3>
@@ -98,19 +100,20 @@
       </ul>
     </section>
     <section class="search-introduction">
-      <h3 class="search-title">Заинтересовались?</h3>
-      <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <h3 class="search-introduction-title">Заинтересовались?</h3>
+      <p class="search-introduction-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        гостиниц в Седоне</p>
       <a class="search-introduction-link" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
 
-    <section class="subscribe-option">
-      <h3 class="subscribe-text">Подпишитесь на рассылку</h3>
-      <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscribe-field" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="subscribe" for="email">
-          <input class="subscribe-field-description" type="email" id="email" placeholder="Ваш e-mail">
+    <section class="subscription">
+      <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+      <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="subscription-control" for="email">
+          <input class="subscription-input" type="email" id="email" placeholder="Ваш e-mail">
         </label>
-        <button class="button" type="submit">Подписаться</button>
+        <button class="subscription-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
@@ -132,8 +135,10 @@
         </a>
       </li>
     </ul>
-      <a class="phone-number-link" href="tel:+78128121212">+7(812)812-12-12</a>
-      <a class="logo-htmlacademy" href="https://htmlacademy.ru" target="blank"><img src="" alt="логотип htmlacademy"></a>
+    <a class="phone-number-link" href="tel:+78128121212">+7(812)812-12-12</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru" target="blank"><img src=""
+        alt="ссылка на htmlacademy"></a>
   </footer>
 </body>
+
 </html>
