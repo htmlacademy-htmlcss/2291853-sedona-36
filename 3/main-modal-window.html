@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-htmlcss.github.io/2291853-sedona-36/3/">
+</head>
+
+<body>
+  <main>
+    <section class="offer-search-modal">
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <h1 class="header-search">Поиск гостиницы в Седоне</h1>
+        <button class="offer-search-button" type="button">Закрыть окно</button>
+        <ul class="offer-search-list">
+          <li class="offer-search-item">
+            <label class="offer-search-control" >Дата заезда:
+              <input class="search-control-input" type="text" name="calendar" placeholder="27 апреля 2020">
+            </label>
+            <p class="offer-search-description">Мы не можем отправить вас в прошлое.</p>
+          </li>
+          <li class="offer-search-item">
+            <label class="offer-search-control">Дата выезда:
+              <input class="search-control-input" type="text" name="calendar" value="1 сентября 2023">
+            </label>
+            <p class="offer-search-text">На эти даты есть свободные номера. Пока есть.</p>
+          </li>
+        </ul>
+        <ul class="search-guests-list">
+          <li class="search-guest-item">
+            <label class="search-guest-control">Взрослые:
+              <input class="guest-control-input" type="text" name="adult" value="2">
+            </label>
+          </li>
+          <li class="search-guest-item">
+            <label class="search-guest-control">Дети:
+              <input class="guest-control-input" type="text" name="child" value="2">
+            </label>
+          </li>
+        </ul>
+          <div class="guest-group">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+          <button class="search" type="submit">Найти</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
