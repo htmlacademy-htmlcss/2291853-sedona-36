@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="main-header">
     <a class="header-logo-link">
-      <img class="header-logo" src="image/logo/logo-sedona.svg" width="140" height="70.05" alt="Логотип Sedona">
+      <img class="header-logo" src="image/logo/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -35,12 +36,17 @@
           </a>
         </li>
         <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">12</span>
+          </a>
+        <li class="navigation-item">
           <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-index">
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
     <div class="main-intro">
       <img class="welcome" src="image/logo/welcome-sedona.svg" width="458" height="358" alt="Добро-пожаловать">
     </div>
@@ -51,7 +57,7 @@
     <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-item">
-          <img class="advantages-photo" src="/image/image-sedona.jpg" width="800" height="384" alt="домики в седоне">
+          <img class="advantages-photo" src="image/image-sedona.jpg" width="800" height="384" alt="домики в седоне">
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <ul class="extra-advantages">
@@ -70,7 +76,7 @@
           </ul>
         </li>
         <li class="advantages-item">
-          <img class="advantages-photo" src="/image/image-canyon.jpg" width="800" height="385" alt="вид на каньон">
+          <img class="advantages-photo" src="image/image-canyon.jpg" width="800" height="385" alt="вид на каньон">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
@@ -81,18 +87,18 @@
       <p class="benefits-description">Опытный персонал и качественное обслуживание!</p>
       <ul class="benefits-list">
         <li class="benefits-item">
-          <img src="/image/logo/home.svg" alt="benefits-logo" width="75" height="72">
-          <h3 class="benefist-title">ЖИЛЬЁ</h3>
+          <span class="visually-hidden">Жильё</span>
+          <h3 class="benefist-title">Жильё</h3>
           <p class="benefist-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li class="benefits-item">
-          <img src="/image/logo/food.svg" alt="benefits-logo" width="74" height="70">
-          <h3 class="benefist-title">ЕДА</h3>
+          <span class="visually-hidden">Еда</span>
+          <h3 class="benefist-title">Еда</h3>
           <p class="benefist-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="benefits-item">
-          <img src="/image/logo/gifts.svg" alt="benefits-logo" width="64" height="76">
-          <h3 class="benefist-title">СУВЕНИРЫ</h3>
+          <span class="visually-hidden">Сувениры</span>
+          <h3 class="benefist-title">Сувениры</h3>
           <p class="benefist-text">
             Не только китайского, но и настоящего местного производства!</p>
         </li>
@@ -116,29 +122,27 @@
       </form>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer-social-networks">
     <ul class="social-networks-list">
       <li class="social-networks-item">
-        <a class="social-networks-logo" href="https://vk.com/htmlacademy" target="blank">
-          <img class="logo-vk" src="/image/logo/social-vkontacte.svg" width="24" height="14" alt="логотип вконтакте">
+        <a class="social-networks" href="https://vk.com/htmlacademy" target="blank">
+          <img class="social-networks-vkontakte" src="image/icon/social-vkontacte.svg" width="24" height="14" alt="Переходите в нашу страницу вконтакте">
         </a>
       </li>
       <li class="social-networks-item">
-        <a class="social-networks-logo" href="https://t.me/htmlacademy" target="blank">
-          <img class="logo-telegram" src="/image/logo/social-telegram.svg" width="18" height="15.1" alt="логотип телеграм">
+        <a class="social-networks" href="https://t.me/htmlacademy" target="blank">
+          <img class="social-networks-telegram" src="image/icon/social-telegram.svg" width="18" height="15" alt="Переходите в наш телеграм">
         </a>
       </li>
       <li class="social-networks-item">
-        <a class="social-networks-logo" href="https://youtube.com/user/htmlacademyru" target="blank">
-          <img class="logo-youtube" src="/image/logo/social-youtube.svg" width="22" height="17" alt="логотип youtube">
+        <a class="social-networks" href="https://youtube.com/user/htmlacademyru" target="blank">
+          <img class="social-networks-youtube" src="image/icon/social-youtube.svg" width="22" height="17" alt="Переходите на наш канал на ютубе">
         </a>
       </li>
     </ul>
-    <a class="phone-number-link" href="tel:+78128121212">
-      <img src="/image/logo/telephone.svg" width="331" height="40" alt="телефон +78128121212">
-    </a>
+    <a class="phone-number-link" href="tel:+78128121212">+78128121212</a>
     <a class="htmlacademy-link" href="https://htmlacademy.ru" target="blank">
-      <img class="image-htmlacademy" src="/image/logo/HTML-Academy.svg" width="114.9" height="32.9" alt="ссылка на htmlacademy">
+      <img class="image-htmlacademy" src="image/logo/html-academy.svg" width="115" height="33" alt="ссылка на htmlacademy">
     </a>
   </footer>
 </body>
