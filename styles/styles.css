@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans" sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user li:nth-child(1) {
+  background-image: url("../image/icon/search.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-user li:nth-child(2) {
+  background-image: url("../image/icon/heart.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.navigation-user li:nth-child(3) {
+
+  border: 1px solid #7DB54F;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 11px;
+}
+
+.navigation-user li:nth-child(4) {
+  font-weight: 700;
+  border: 1px solid #756157;
+  background-color: #756157;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 160px;
+  height: 36px;
+}
+
+.main-intro {
+  background-image: url("../image/index-background-sedona.jpg");
+  width: 1200px;
+  height: 767px;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+  width: 458px;
+  height: 352px;
+  padding-top: 51px;
+  padding-left: 371px;
+}
