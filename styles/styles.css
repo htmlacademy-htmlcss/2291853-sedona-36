@@ -14,10 +14,21 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+
 body {
-  font-family: "PT Sans" sans-serif;
-  background-color: #FFFFFF;
-  color: #000000;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -28,59 +39,53 @@ body {
   line-height: 24px;
 }
 
-.navigation
-
 .navigation-link {
   color: #000000;
   text-decoration: none;
 }
 
-.navigation-user li:nth-child(1) {
+.navigation-user .search{
   background-image: url("../image/icon/search.svg");
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
 
-.navigation-user li:nth-child(2) {
+.navigation-user .heart {
   background-image: url("../image/icon/heart.svg");
+  background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
 
-.navigation-user li:nth-child(3) {
-
+.navigation-user .favourites {
   border: 1px solid #7DB54F;
   background-color: #7DB54F;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  left: 20px;
-  top: 11px;
+  font-weight: 400;
 }
 
-.navigation-user li:nth-child(4) {
-  font-weight: 700;
+.navigation-user .want {
   border: 1px solid #756157;
   background-color: #756157;
   border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   width: 160px;
   height: 36px;
+  text-transform: uppercase;
+}
+
+.navigation-user .text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-intro {
-  background-image: url("../image/index-background-sedona.jpg");
-  width: 1200px;
-  height: 767px;
-  background-repeat: no-repeat;
-}
-
-.welcome {
-  width: 458px;
-  height: 352px;
-  padding-top: 51px;
-  padding-left: 371px;
+  background: url("../image/icon/white-icon.svg") no-repeat bottom,
+  url("../image/index-background-sedona.jpg") no-repeat top;
+  background-position: bottom;
+  backgroung-size: 100% auto;
+  position: absolute;
 }
