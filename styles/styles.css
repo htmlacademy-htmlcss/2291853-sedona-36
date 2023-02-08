@@ -23,6 +23,8 @@ body {
   background-color: #ffffff;
 }
 
+/*Навигация*/
+
 .navigation {
   font-weight: 700;
   font-size: 20px;
@@ -35,7 +37,7 @@ body {
   color: #000000;
 }
 
-.navigation-user .search{
+.navigation-user .search {
   background-image: url("../image/icon/search.svg");
   background-repeat: no-repeat;
   width: 20px;
@@ -72,6 +74,8 @@ body {
   line-height: 20px;
 }
 
+/*Херо*/
+
 .main-intro {
   background: url("../image/icon/white-icon.svg") no-repeat bottom,
   url("../image/index-background-sedona.jpg") no-repeat top;
@@ -92,12 +96,38 @@ body {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
+
+/*Преимущества*/
 
 .advantages-item {
   background-color: #82B3D3;
-  color: #ffffff;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
+}
+
+.advantages-text {
+  color: #333333;
+  text-align: center;
+}
+
+.extra-advantages {
+  background-color: #ffffff
+}
+
+.tourist, .square {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.road {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .extra-advantages-title {
@@ -106,12 +136,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  background-color: #82B3D3;
   color: #000000;
 }
 
 .extra-advantages-text {
   text-align: center;
+  color: #333333;
 }
 
 .benefits-heading {
@@ -123,9 +153,24 @@ body {
 }
 
 .benefits-description {
+  font-weight: 400;
+  color: #333333;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+}
+
+.benefits-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.food {
+  background-color: #ffffff;
+}
+
+.benefist-text {
+  color: #333333;
+  text-align: center;
 }
 
 .benefist-title {
@@ -136,21 +181,21 @@ body {
   text-align: center;
 }
 
+/*Интерес*/
+
 .search-introduction-title {
-  width: 297px;
-  height: 36px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: auto;
 }
 
 .search-introduction-text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  color: #333333;
 }
 
 .searcher {
@@ -158,6 +203,9 @@ body {
   background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .search-introduction-link {
@@ -165,8 +213,9 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
 }
+
+/*Подписка*/
 
 .subscription.index {
   background-image: url("../image/Subscribe-background-index.jpg");
@@ -185,14 +234,20 @@ body {
   color: #ffffff;
 }
 
-.subscription-description {
+.subscription-description-index {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
 }
 
+.subscription-input {
+  background-color: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+}
+
 .subscription-button {
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   border-color: #82B3D3;
   font-size: 20px;
@@ -203,12 +258,17 @@ body {
   border-radius: 0px 4px 4px 0px;
 }
 
+/*Подвал*/
+
 .phone-number-link {
   text-align: center;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  text-decoration: none;
 }
+
+/*Каталог*/
 
 .header-inner-title {
   font-size: 60px;
@@ -256,10 +316,36 @@ body {
   background-size: 100% ;
 }
 
+.catalog-filters-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  color: #ffffff;
+}
+
+.button-done {
+  background-color: #82B3D3;
+  color: #ffffff;
+  border-color: #82B3D3;
+}
+/*Список карточек*/
+
 .catalog-search-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.catalog-sorting {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .catalog-view-link {
@@ -295,11 +381,18 @@ body {
   text-decoration: none;
 }
 
+.catalog-card-accommodation, .catalog-card-price, .catalog-card-rating {
+  color: #333333;
+}
+
+
+
 .detailed {
   border: 1px solid #756157;
   background-color: #756157;
   text-align: center;
   border-radius: 4px;
+  font-weight: 700;
 }
 
 .catalog-card-info-link {
@@ -317,12 +410,16 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
 }
 
 .check {
   border: 1px solid #7DB54F;
   border-radius: 4px;
   background-color: #7DB54F;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
 }
 
 .catalog-card-rating {
@@ -333,19 +430,26 @@ body {
   line-height: 20px;
 }
 
+/*Пагинация*/
+
 .pagination-link.pagination-current {
   color: #000000;
   text-decoration: none;
+  background-color: #F2F2F2;
 }
 
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
+  background-color: #82B3D3;
 }
 
 .pagination-link.next {
+  background-color: #ffffff;
   color: #000000;
 }
+
+/*Подписка*/
 
 .subscription.catalog {
   text-align: center;
@@ -376,4 +480,11 @@ body {
   font-weight: 700;
   color: #ffffff;
   border-radius: 0px 4px 4px 0px;
+}
+
+.subscription-description-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
