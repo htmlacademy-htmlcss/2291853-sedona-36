@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 
-ul, ol {
+ul {
   list-style: none;
 }
 
@@ -120,6 +120,7 @@ body {
 
 .advantages-item {
   background-color: #82B3D3;
+  color: #ffffff;
 }
 
 .advantages-title {
@@ -283,6 +284,7 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
 }
 
 /*Каталог*/
@@ -373,8 +375,6 @@ body {
 .tile {
   background-image: url("../image/icon/tile.svg");
   background-repeat: no-repeat;
-  text-decoration: none;
-  color: #000000;
 }
 
 .slaidshow {
