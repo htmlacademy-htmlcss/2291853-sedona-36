@@ -27,10 +27,9 @@
   overflow: hidden;
 }
 
-ul {
+.style-none {
   list-style: none;
 }
-
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -57,15 +56,13 @@ body {
 .navigation-user .search {
   background-image: url("../image/icon/search.svg");
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  padding: 22px 12px;
 }
 
 .navigation-user .heart {
   background-image: url("../image/icon/heart.svg");
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  padding: 22px 12px;
 }
 
 .navigation-user .favourites {
@@ -74,7 +71,7 @@ body {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  font-weight: 400;
+  display: block;
 }
 
 .navigation-user .want {
@@ -83,12 +80,12 @@ body {
 }
 
 .navigation-user .text {
+  display: block;
+  text-align: center;
   color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
+  padding: 8px 50px;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
+  padding: 8px 50px;
 }
 
 /*Херо*/
@@ -258,22 +255,24 @@ body {
   text-align: center;
   color: #ffffff;
 }
-
-.subscription-input {
-  background-color: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
-}
-
 .subscription-button {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  border-color: #82B3D3;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
+  padding: 8px 50px;
   color: #ffffff;
   background-color: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-style: none;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription-input {
+  font-family: "PT Sans", sans-serif;
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+  border-style: none;
+  width: 452px;
+  height: 52px;
 }
 
 /*Подвал*/
@@ -295,15 +294,18 @@ body {
   color: #ffffff;
 }
 
-.to-main{
+.to-main {
+  display: block;
   background-image: url("../image/icon/micro-home.svg");
   background-repeat: no-repeat;
+  width: 43px;
+  height: 42px;
 }
 
 .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
-}
+ }
 
 .breadcrumbs-item {
   font-size: 16px;
@@ -337,20 +339,24 @@ body {
 
 .catalog-filters-button {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .button-reset {
   color: #ffffff;
+  background: transparent;
+  border-style: none;
+  padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .button-done {
   background-color: #82B3D3;
   color: #ffffff;
-  border-color: #82B3D3;
+  padding: 8px 50px;
+  border-style: none;
+  border-radius: 4px;
 }
 /*Список карточек*/
 
@@ -375,16 +381,19 @@ body {
 .tile {
   background-image: url("../image/icon/tile.svg");
   background-repeat: no-repeat;
+  padding: 14px 12px;
 }
 
 .slaidshow {
   background-image: url("../image/icon/slaidshow.svg");
   background-repeat: no-repeat;
+  padding: 14px 12px;
 }
 
 .list {
   background-image: url("../image/icon/list.svg");
   background-repeat: no-repeat;
+  padding: 14px 12px;
 }
 
 .catalog-card-name {
@@ -405,7 +414,7 @@ body {
 
 
 .detailed {
-  border: 1px solid #756157;
+  Padding: 8px 50px 8px 50px;
   background-color: #756157;
   text-align: center;
   border-radius: 4px;
@@ -420,10 +429,11 @@ body {
 }
 
 .catalog-card-button {
-  border: 1px solid #82B3D3;
   background-color: #82B3D3;
+  border-style: none;
   font-size: 16px;
   line-height: 20px;
+  Padding: 8px 50px 8px 50px;
   text-align: center;
   color: #ffffff;
   border-radius: 4px;
@@ -432,7 +442,11 @@ body {
 }
 
 .check {
-  border: 1px solid #7DB54F;
+  border-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  Padding: 8px 50px 8px 50px;
+  text-align: center;
   border-radius: 4px;
   background-color: #7DB54F;
   font-family: "PT Sans", sans-serif;
@@ -440,11 +454,12 @@ body {
 }
 
 .catalog-card-rating {
-  border: 1px solid #F2F2F2;
+  display: block;
   background-color: #F2F2F2;
   border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
 }
 
 /*Пагинация*/
@@ -453,17 +468,20 @@ body {
   color: #000000;
   text-decoration: none;
   background-color: #F2F2F2;
+  font-weight: 700;
 }
 
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
   background-color: #82B3D3;
+  font-weight: 700;
 }
 
 .pagination-link.next {
   background-color: #ffffff;
   color: #000000;
+  font-weight: 700;
 }
 
 /*Подписка*/
@@ -490,13 +508,14 @@ body {
 }
 
 .catalog .subscription-button {
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  border-color: #82B3D3;
+  padding: 8px 50px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-style: none;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  border-radius: 0px 4px 4px 0px;
 }
 
 .subscription-description-catalog {
