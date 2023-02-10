@@ -129,7 +129,7 @@ body {
 }
 
 .advantages-text {
-  color: #333333;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -264,9 +264,12 @@ body {
   border-style: none;
   font-size: 20px;
   line-height: 36px;
+  font-weight: 700;
 }
 
 .subscription-input {
+  font-size: 18px;
+  line-height: 24px;
   font-family: "PT Sans", sans-serif;
   background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
@@ -460,6 +463,8 @@ body {
   color: #333333;
   text-transform: uppercase;
   padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /*Пагинация*/
@@ -468,6 +473,8 @@ body {
   color: #000000;
   text-decoration: none;
   background-color: #F2F2F2;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
 }
 
@@ -475,12 +482,16 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
 }
 
 .pagination-link.next {
   background-color: #ffffff;
   color: #000000;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 700;
 }
 
